@@ -1,0 +1,5 @@
+What is Python ?
+
+Python is High Level, Dynamically Typed,
+General Purpose, Hybrid Language,
+
