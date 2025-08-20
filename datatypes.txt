@@ -1,0 +1,45 @@
+# What is data:-
+    Data can be thought, knowledge, information,
+    record, emotions.
+
+# Python Supports following Datatypes:-
+
+    1. INT:-
+        # a number whether +ve or -ve, including 0
+        # but without decimal point.
+
+        # Ex:- 0, 1, -1, 45, 45, -555
+
+    2. FLOAT:-
+        # a number +ve or -ve wwith decimal point 
+        
+        # Ex:- -45.50, -0.23, 89.7788, 100.00
+
+    3. Complex:-
+        #  a complex datatype is a combination of
+        #  real number and imaginary number.
+
+            # What is real number:-
+                All integers and floats are real numbers.
+
+                Ex: 90, 45, 23, 1, 0, -12, 34, -567, -78.66, 40.50, 0.567
+
+            # what is imaginary number:-
+                a number prefixed by j is called imaginary number
+                Ex: 5j, 4.5j, -23j, -12.45j, 0.78j
+
+        # Ex of Commplex number:-
+            5 + 7j, 23 -78j, -12 - 50j, -0.5 +59j
+
+
+    4. STRING
+    5. LIST
+    6. TUPLE
+    7. DICTIONARY
+    8. RANGE
+    9. BOOLEAN
+    10. SET
+    11. FROZENSET 
+    12. BYTE
+    13. BYTEARRAY
+    
