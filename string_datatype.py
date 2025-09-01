@@ -84,10 +84,10 @@ girl = "Sunaina"
 str100 = '''Yellow is Blue'''
 # by using negative indices print 'Yellow'
 
-print(str100[-14:-8:1])
+# print(str100[-14:-8:1])
 
 # by using positive indices print'eulB'
-print(str100[13:9:-1])
+# print(str100[13:9:-1])
 
 # by using Negative indices print 'si'
 # print(str100[-6:-8:-1])
@@ -150,7 +150,7 @@ print(str100[13:9:-1])
 
 # Search and Replace in built methods of string in python:-
 
-str999 = 'APPLE'
+# str999 = 'APPLE'
 # 1) find
 # print(str999.find('A'))
 # print(str999.find('P'))
@@ -175,8 +175,59 @@ str999 = 'APPLE'
 
 # 5) replace
 
-str888 = 'HELLO'
-print(str888.replace('H', 'P'))
-print(str888)
+# str888 = 'HELLO'
+# print(str888.replace('H', 'P'))
+# print(str888)
 
-print(str888.replace('HELLO', "BYE"))
+# print(str888.replace('HELLO', "BYE"))
+
+
+# CHECKING CONTENT:-
+
+# create a smal app which takes string as an input from user
+# and performs Checking content bin built methods.
+
+x = input("Enter a string: ")
+
+# startswith(arg)
+
+# print(x.startswith('baji'))
+
+# endswith(arg)
+# print(x.endswith('igar '))
+
+# isalpha()
+# print(x.isalpha())
+
+# isdigit()
+# print(x.isdigit())
+
+# isalnum()
+# print(x.isalnum())
+
+# isspace()
+# print(x.isspace())
+
+# islower()
+# print(x.islower())
+
+# isupper()
+# print(x.isupper())
+
+# istitle()
+# print(x.istitle())
+
+
+
+# WHITESPACE HANDELING:-
+print(x)
+print(x.lstrip())  # will remove unnecesssary empty spaces from left side of string
+print(x.rstrip())  # will remove unnecessary empty spaces from right side of the string
+print(x.strip())  # will remove from both thee side of empty spaces
+
+
+
+
+
+
+
