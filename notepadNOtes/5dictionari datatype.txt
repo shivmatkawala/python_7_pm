@@ -1,0 +1,105 @@
+1. Introduction to Dictionaries:-
+
+	Definition: A dictionary in Python is a collection of key-value pairs.
+
+	Syntax: {key1: value1, key2: value2, ...}
+
+	Characteristics: Unordered, mutable, and indexed by keys.
+
+2. Creating Dictionaries
+	Empty Dictionary: my_dict = {}
+	Empty Dictionary: my_dict1 = diict()
+	
+	my_dict = dict({"name": "kumar", "age": 27, "city": "Hyderabad"})
+	print(my_dict)
+	print(type(my_dict))
+	#######################################################################
+
+	my_dict1 = {"school": "st Xaviers school", "degree": "Graduations"}
+	print(my_dict1)
+	print(type(my_dict1))
+	#######################################################################
+
+	my_dict = dict(one=1, two=2, three=3, four=4)
+	print(my_dic)
+	print(type(my_dic))
+	########################################################################
+
+	keys = ["name", "age", "city"]
+	values = ["kumar", 27, "Hyderabad"]
+	my_dict2 = dict(zip(keys, values))
+	print(my_dict2)
+	print(type(my_dict2))
+	##########################################################################
+
+
+	keys = ["name", "age", "city"]
+	my_dict3 = dict.fromkeys(keys, "unknown")  # Sets all values to "unknown"
+	print(my_dict3)
+	print(type(my_dict3))
+	##########################################################################
+
+	my_dict5 = dict([("name", "kumar"), ("age", 27), ("city", "Hyderabad")])
+	print(my_dict5)
+	print(type(my_dict5))
+	##########################################################################
+
+
+
+3. Accessing Elements:-
+
+	my_dict = {"name": "John", "age": 30, "city": "New York"}
+
+	1) By Keys:-
+		print(my_dict["name"])  
+
+	2) Using .get():-
+		print(my_dict.get("age"))  
+		print(my_dict.get("country", "USA")) 
+
+
+4. Modifying Dictionaries:-
+	Adding Items:-
+		Key and value together we call Item.
+		my_dict["email"] = "john@example.com"
+
+	Updating Items:-
+		my_dict["age"] = 31
+
+	Removing Items:-
+		1) my_dict.pop("city")  # Removes 'city'
+
+		2) del my_dict["email"]  # Removes 'email'
+
+		3) my_dict.clear()  # Removes all items
+
+		4) my_dict.popitem()  # Removes last Item
+
+
+5. Dictionary Methods:-
+
+	.keys():- Returns a view object of all keys.
+		keys = my_dict.keys()
+	
+
+	.values(): Returns a view object of all values.
+		values = my_dict.values()
+
+
+	.items(): Returns a view object of all key-value pairs.
+		items = my_dict.items()
+
+	.update(): Updates the dictionary with another dictionary.
+		my_dict.update({"age": 32, "country": "USA"})
+
+	.setdefault('name'): adds new record of key called name with value None.
+
+
+	
+6. Nested Dictionaries:-
+
+	nested_dict = {"person1": {"name": "John", "age": 30}, "person2": {"name": "Jane", "age": 25}}
+
+	Accessing Nested Data:-
+		print(nested_dict["person1"]["name"]) 
+

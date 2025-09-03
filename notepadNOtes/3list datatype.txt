@@ -1,0 +1,95 @@
+*********************************************List Data Type in Python*******************************************
+
+In Python, a list is a built-in, mutable data structure used to store an ordered collection of items. 
+
+Lists can contain elements of various data types, such as integers, strings, or even other lists, making them highly versatile.
+
+
+KEY CHARECTERISTICS OF LIST:-
+	
+	Mutable: 
+		Lists can be modified after their creation.
+
+	Ordered: 
+		elements in a list retain their order.
+
+	Heterogeneous: 
+		Elements can be of different types.
+
+	Indexed: 
+		Each element in a list is associated with an index, starting from 0.
+
+
+CREATING A LIST:-
+
+	You can create a list using square brackets [] or the list() function.
+
+	Examples:-
+		list1 = [1, 2, 'kumar', 'naveen', True, [55, 66]]
+
+		list2 = list((56, 2, 89, 100, [23, 7, 'Vinesh'], False))
+
+
+ACCESSING THE ELEMENTS:-
+
+	Elements are accessed by their index.
+
+	print(list1[1])  
+
+
+BUILT IN METHODS OF LIST:-
+
+	list1.append(10) ----> Adds an item to the end of the list.
+
+	list1.extend([5, 6, 7]) ----> Extends the list by appending elements from the provided iterable.
+
+	list1.insert(1, 'orange') ----> Inserts an item at a specified index.
+
+	list1.remove('apple') -----> Removes the first occurrence of the specified item. Raises a ValueError if the item is not found.
+
+	list1.pop(2) -----> Removes and returns the item at the specified index. If no index is specified, removes the last item.
+
+	list1.clear() ----->  Removes all elements from the list.
+
+	list1.index('apple') -----> Returns the index of the first occurrence of the specified item. Optionally, you can specify start and end positions to 					limit the search.
+
+	list1.count(1) ----->  Returns the count of how many times a specified item appears in the list.
+
+
+	list1.sort() -----> Sorts the list in ascending order by default. Set reverse=True for descending order. 
+				A custom key function can be provided for custom sorting.
+
+
+	list1.reverse() ------>  Reverses the elements of the list in place.
+
+	
+	list2 = list1.copy() -----> Returns a shallow copy of the list.
+
+
+ADDITIONAL OPERATIONS WITH LISTS:-
+
+	List Concatenation:-
+
+	list1 = [1, 2]
+	list2 = [3, 4]
+
+	result = list1 + list2
+
+
+	Repetition:-
+	
+	list3 = [1, 2, 3] * 3 ==> [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+
+	Slicing:-
+
+	
+
+
+
+
+
+
+
+
+

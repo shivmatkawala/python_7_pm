@@ -1,0 +1,122 @@
+##################################### OPERATORS ########################################
+
+What is Expression ?
+
+c = a + b ---> (a + b) is expression
+
+What is operator ?
+
+c = a + b ---> (=, +) are operators
+
+What is Operand ?
+
+c = a + b ---> (c, a, b) are operands
+
+
+Types of Operators:-
+	
+	1) Arithmetic Operators:-
+		+ :- Addition,  
+			Example:- 5 + 6 = 11
+
+		- :- Subtraction, 
+			Example:- 8 - 5 = 3
+ 
+		* :- Multiplication, 
+			Example:- 4 * 5 = 20
+ 
+		/ :- Normal Division, 
+			Example:- 27 / 5 = 5.4
+ 
+		//:- Floor Division,  
+			Example:- 27 // 5 = 5
+
+		**:- Exponentiation (Power),  
+			Example:- 4 ** 2 = 16
+
+		% :- Modulus (Remainder)
+			Example:- 27 % 5 = 2
+
+
+
+	2) Assignment Operator:-
+		=   :- Assign,
+			Example:-  x = 5
+
+		+=  :- Add  and Assign, 
+			Example:-  x += 3   [x = x + 3]
+
+		-=  :- Subtract and Assign,
+			Example:-  x -= 5   [x = x - 5] 
+ 
+		*=  :- Multiply and Assign,  
+			Example:-  x *= 5   [x = x * 5] 
+
+		/=  :- Divide and Assign, 
+			Example:-  x /= 5   [x = x / 5]  
+
+		//= :- Floor Divide and Assign, 
+			Example:-  x //= 5   [x = x // 5]  
+
+		**= :- Exponentiate and Assign, 
+			Example:-  x **= 5   [x = x ** 5]  
+
+		%=  :- Modulus and Assign,
+			Example:-  x %= 5   [x = x % 5] 
+
+
+	3) Comparison Operator:-
+		== :-  Equal to, 
+			Example:-  5 == 5  [True] 
+
+		!= :-  Not Equal to, 
+			Example:-  5 != 3  [True]
+
+		>  :-  Greater than,
+			Example:-  15 > 5  [True]  
+
+		<  :-  Lesser than,
+			Example:-  5 < 15  [False]
+  
+		>= :-  Greater than or equal to,
+			Example:-  50 >= 5  [True] 
+			Example:-  5 >= 5  [True] 
+
+		<= :-  Lesser than or Equal to,
+			Example:-  50 <= 5  [False]
+			Example:-  25 <= 50  [True]
+			Example:-  5 <= 5  [True]
+
+	4) Membership Operator:-
+		in      :- Returns True if present,  
+			Example:- 'a' in 'apple'  [True]
+			Example:-  list1 = [11, 22, 33]   print(22 in list1)  [True]
+
+		not in  :- Returns True if not present
+			Example:- 'p' not in 'apple'  [False]
+			Example:- tup1 = ('America', 'China', 'India')  print('Korea' not in tup1)  [True]
+
+
+	5) Identity Operator:-
+		is     :-  Same object,  
+			Example:- x = 20,  y = 20   print(x is y)  [True]
+			Example:- x = 'Mumbai',  y = 'mumbai'  print(x is y)  [False]
+
+		is not :-  Not the Same Object,
+			Example:- x = True,  y = True    print(x is not y)   [False]
+			Example:- x = 20,  y = 21        print(x is not y)   [True]
+		
+
+	6) ternary Operator:-
+		A conditional operator that assigns a value based on a condition.
+		x = a if condition else b
+		Ex: result = "Even" if 5 % 2 == 0 else "Odd"
+
+	7) Bitwise Operator:-
+		&  :-  Bitwise AND,  
+		|  :-  Bitwise OR,  
+		^  :-  Bitwise XOR,    
+		<< :-  Left Shift,  
+		>> :-  Right Shift,
+
+

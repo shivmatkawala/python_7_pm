@@ -1,0 +1,183 @@
+****************************************************Python Data Types********************************************************************
+
+
+Numeric Data Types:-
+
+	1) Integer [int]:-
+
+		In Python, int is a built-in data type used for storing integer values, which are whole numbers without a decimal point. 
+
+		Integers in Python can be positive, negative, or zero. 
+		
+		Examples:- 123, 567, -8765, 4
+
+		Arithmetic Operations:-
+			x = 10
+			y = 20
+
+			Addition:-
+				total = x + y
+
+			Subtraction:-
+				total = x - y
+
+			Multiplication:-
+				total = x * y
+			
+			normal division:-
+				total = x / y
+
+			floor division:-
+				total = x // y
+
+			power:-
+				total = x ** 2
+			
+			mod operation:-
+				total = x % 2
+
+
+	2) Float [float]:-
+		
+		In Python, the float data type represents real numbers that include a decimal point. 
+
+		Floats are used to handle numbers that may have fractional components, such as 3.14 or -0.001. 
+
+		Python's floats are implemented using double precision, providing about 15–17 digits of precision.
+
+		Example:- 4.567, -45.456, 0.45, -0.234
+
+			Arithmetic Operations:-
+			x = 5.23
+			y = 10.5
+
+			Addition:-
+				total = x + y
+
+			Subtraction:-
+				total = x - y
+
+			Multiplication:-
+				total = x * y
+			
+			normal division:-
+				total = x / y
+
+			floor division:-
+				total = x // y
+
+			power:-
+				total = x ** 2
+			
+			mod operation:-
+				total = x % 2
+
+
+	3) Complex [complex]:-
+		
+		A complex number is made up of two parts - real and imaginary. They are separated by '+' or '-' signs. 
+
+		The imaginary part is suffixed by 'j' which is the imaginary number. The square root of -1 ([Math Processing Error]), is defined as 			imaginary number. 
+
+		Complex number in Python is represented as x+yj, where x is the real part, and y is the imaginary part. So, 5+6j is a complex number.
+
+		Examples:--- 5 + 6j,   -3 -4j,  9 - 8.5j,  0.5 + 17j
+
+
+			Arithmetic Operations:-
+			x = 5.23
+			y = 10.5
+
+			Addition:-
+				total = x + y
+
+			Subtraction:-
+				total = x - y
+
+			Multiplication:-
+				total = x * y
+			
+			normal division:-
+				total = x / y
+			
+			power:-
+				total = x ** 2
+
+========================================================================================================================================================
+
+String Data Type:-
+
+	In Python, the str (string) data type is used to represent sequences of characters. 
+
+	Strings are immutable, meaning once created, they cannot be changed. 
+	
+	You can create a string by enclosing characters in single quotes, double quotes, or triple quotes (for multi-line strings).
+
+
+	Examples:-  'a',   'Apple',  'canada',   'Amol@123',  '@#$%^&',  '12345',  '4567.3345', 'My name is Kumar'
+			"Dear Comrade",  "Python is the Best Language.", '''This is a good book, you can buy it.''',  
+			"""My dear friend, you are here for study"""
+
+
+
+	Built in Methods:
+		CASE CONVERSION METHODS:-
+
+			string1 = "India is my country."
+
+			string1.lower() — Converts all characters to lowercase.
+
+			string1.upper() — Converts all characters to uppercase.
+
+			string1.capitalize() — Capitalizes the first character of the string.
+
+			string1.title() — Capitalizes the first character of each word.
+
+			string1.swapcase() — Swaps the case of each character (lowercase to uppercase and vice versa).
+
+
+		SEARCH AND REPLACE:-
+
+			string1.find(substring) — Returns the index of the first occurrence of the substring, or -1 if not found.
+
+			string1.rfind(substring) — Returns the index of the last occurrence of the substring, or -1 if not found.
+
+			string1.index(substring) — Similar to find(), but raises a ValueError if the substring is not found.
+
+			string1.rindex(substring) — Similar to rfind(), but raises a ValueError if the substring is not found.
+
+			string1.replace(old, new) — Replaces all occurrences of a substring with another substring.
+
+
+		CHECKING CONTENT:-
+			
+			string2 = '  I have 2345 Rs in my pocket '
+
+			string2.startswith(substring) — Checks if the string starts with the specified substring.
+
+			string2.endswith(substring) — Checks if the string ends with the specified substring.
+
+			string2.isalpha() — Returns True if all characters are alphabetic.
+
+			string2.isdigit() — Returns True if all characters are digits.
+
+			string2.isalnum() — Returns True if all characters are alphanumeric (letters and numbers).
+
+			string2.isspace() — Returns True if all characters are whitespace. space, blank space
+
+			string2.islower() — Returns True if all characters are lowercase.
+
+			string2.isupper() — Returns True if all characters are uppercase.
+
+			string2.istitle() — Returns True if the string is title-cased (each word starts with an uppercase letter).
+
+
+		WHITESPACE HANDELING:-
+
+			string2.strip() — Removes leading and trailing whitespace.
+
+			string2.lstrip() — Removes leading whitespace.
+
+			string2.rstrip() — Removes trailing whitespace.
+
+==========================================================================================================================================================

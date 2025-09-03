@@ -1,0 +1,79 @@
+*****************************************************Range Data Type in Python**************************************************************
+
+The range data type in Python represents an immutable sequence of numbers, typically used for looping a specific number of times in for loops. 
+
+It generates numbers in a specified range without storing them in memory, which makes it highly efficient.
+
+
+
+CREATE A RANGE OBJECT:-
+
+	The range function can be called with one, two, or three arguments:
+
+		range(stop) Generates numbers from 0 up to stop, but not including, stop.
+
+		range(start, stop): Generates numbers from start up to stop, but not including, stop.
+
+		range(start, stop, step): Generates numbers from start up to stop, but not including, stop, incrementing by step.
+
+	Examples:
+		
+		range1 = range(5)           # 0, 1, 2, 3, 4
+
+		range2 = range(2, 6)        # 2, 3, 4, 5
+
+		range3 = range(1, 10, 2)    # 1, 3, 5, 7, 9
+
+
+CHARECTERISTICS OF RANGE:-
+
+	Immutable: 
+		Once created, the sequence cannot be modified.
+
+	Memory Efficient: 
+		Unlike lists, range objects do not store each number in memory. Instead, they generate each number on demand.
+
+	Lazy Evaluation: 
+		The values are produced as needed, making range ideal for generating large sequences without consuming large amounts of memory.
+
+
+
+ACCESSING ELEMENTS IN A RANGE:-
+	You can access elements in a range object by indexing or iterating over it.
+
+		r = range(1, 10, 2)
+
+		print(r[1])     # Output: 3 (second element in the range)
+
+		print(list(r))  # Output: [1, 3, 5, 7, 9]
+
+
+
+BUIL IN METHODS OF RANGE:-
+	
+	r = range(1, 10, 2)
+
+	print(len(r)) --->Returns the length (number of elements) of the range sequence.
+	
+	print(max(r)) ,   print(min(r))  ---> Returns the smallest, largest element in the range.
+
+	print(r.index(5)) ---> Returns the index of the specified item in the range. Raises a ValueError if the item is not in the range.
+
+	print(r.count(3))  ----> Returns the number of occurrences of the specified item in the range (0 or 1 since each number is unique in range).
+
+
+	
+CONVERSION OF RANGE TO OTHER DATA TYPES:-
+
+	r = range(5)
+
+	Convert to a list
+	print(list(r))  # Output: [0, 1, 2, 3, 4]
+
+	Convert to a tuple
+	print(tuple(r))  # Output: (0, 1, 2, 3, 4)
+
+	Convert to a set
+	print(set(r))    # Output: {0, 1, 2, 3, 4}
+
+

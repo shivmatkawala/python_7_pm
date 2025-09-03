@@ -1,0 +1,103 @@
+Python Datatype:- Frozen Set
+
+Defination:-  
+
+	a frozenset is an immutable version of a set. Unlike regular sets, the contents of a 	frozenset cannot be modified after it is created. This immutability makes frozensets 	hashable, meaning they can be used as keys in dictionaries or as elements of other sets.
+
+	what is hashable:-
+		hashable means that an object has a hash value that does not change during its lifetime.
+
+	immutable = hashable
+
+Key Characteristics of Frozensets:-
+
+	Immutable: Once created, you cannot add, remove, or modify elements in a frozenset.
+
+	Hashable: Frozensets can be used as keys in dictionaries or elements in other sets.
+
+	Set-like Behavior: Frozensets support many of the same operations as sets, such as union, 	intersection, difference, and symmetric difference.
+
+	Unordered and Unique: Just like sets, frozensets do not allow duplicate elements and have 	no defined order.
+
+Creating a Frozenset:-
+
+	# Creating a frozenset from a list:-
+
+		frozen_set1 = frozenset([1, 2, 3, 4])
+		print(frozen_set1)  # Output: frozenset({1, 2, 3, 4})
+
+	# Creating a frozenset from a string:-
+
+		frozen_set2 = frozenset("hello")
+		print(frozen_set2)  # Output: frozenset({'h', 'e', 'l', 'o'})
+
+	# Creating a frozenset from a tuple:-
+
+		frozen_set3 = frozenset((10, 20, 30))
+		print(frozen_set3)  # Output: frozenset({10, 20, 30})
+
+	# Creating a frozenset from set
+		fs3 = frozenset({4, 5, 6})
+		print(fs3)  # Output: frozenset({4, 5, 6})
+
+
+
+Membership Testing:-
+	fs = frozenset([1, 2, 3])
+	print(2 in fs)    # Output: True
+	print(4 in fs)    # Output: False
+
+Union:-
+	fs1 = frozenset([1, 2, 3])
+	fs2 = frozenset([3, 4, 5])
+	print(fs1 | fs2)  # Output: frozenset({1, 2, 3, 4, 5})
+
+Intersection:-
+	print(fs1 & fs2)  # Output: frozenset({3})
+
+Difference:-
+	print(fs1 - fs2)  # Output: frozenset({1, 2})
+
+Symmetric Difference:-
+	print(fs1 ^ fs2)  # Output: frozenset({1, 2, 4, 5})
+
+
+Other Operations on frozenset:-
+
+	s = frozenset([1, 2, 3, 4])
+
+	p = frozenset([3, 4, 5, 6])
+
+	1).difference
+
+		k =  s.difference(p)
+		print(k)
+
+	2).intersection
+
+		m = s.intersection(p)
+		print(m)
+	
+	3).isdisjoint
+		True if intersection is null.
+		False if intersection is not null.
+
+		print(s.isdisjoint(p))
+
+	
+	4).issubset()
+
+
+	5).isuperset()
+
+	
+
+Dictionary Keys Since frozensets are hashable, they can be used as keys in dictionaries.
+	d = {frozenset([1, 2, 3]): "Value"}
+	print(d)  # Output: {frozenset({1, 2, 3}): 'Value'}
+
+Set of Sets Sets cannot contain other sets because they are mutable, but they can contain frozensets.
+	s = {frozenset([1, 2]), frozenset([3, 4])}
+	print(s)  # Output: {frozenset({1, 2}), frozenset({3, 4})}
+
+	

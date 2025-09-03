@@ -1,0 +1,126 @@
+f1. Introduction to Sets
+	Definition: A set is a collection of unique elements.
+
+	Syntax: {element1, element2, ...}
+
+	Characteristics: Unordered, mutable, do not allow duplicate elements.
+
+2. Creating Sets
+	Empty Set:-  
+		my_set = set()
+
+	Set with elements:-
+		At least one character is needed inside curly brackets.
+		my_set = {1, 2, 3, 4, 5}
+
+
+3. Accessing Set Elements:-
+	* Sets do not support indexing, slicing, or other sequence-like behavior because they 	  	  are unordered.
+
+	* To check if an element is in a set, use the in keyword:
+		print(1 in my_set)  # Output: True
+
+
+4. Adding and Removing Elements:-
+	
+	Adding:-
+		my_set.add(6)
+
+	Removing:-
+		my_set.remove(5)   # Raises KeyError if element not found
+
+		my_set.discard(2)  # Does not raise error if element not found
+
+	clearing:-
+		my_set.clear()     # Clears the whole set {Deletes the all elements of set.}
+
+5. Updating Sets with Multiple Elements:
+
+	my_set.update([7, 8, 9])
+	my_set.update({10,23, 34})
+	my_set.update((1000, 2000, 3000))
+	my_set.update(34, 56, 67)
+
+
+6. Removing and Returning an Arbitrary Element:
+	In Python, an arbitrary element is a random element.
+	
+	element = my_set.pop()
+
+
+7. Set Operations:-
+
+	set1 = {1, 2, 3}
+	set2 = {3, 4, 5}
+	
+	Union:-
+		Returns a new set with elements from both sets.
+
+		union_set = set1 | set2  # {1, 2, 3, 4, 5}
+
+	Intersection:-
+		Returns a new set with elements common to both sets.
+
+		intersection_set = set1 & set2  # {3}
+
+	Difference:-
+		Returns a new set with elements in the set that are not in the other set.
+
+		difference_set1 = set1 - set2  # {1, 2}
+		difference_set2 = set2 - set1  # {4, 5}
+
+	Symmetric Difference:-
+		Returns a new set with elements in either set but not in both.
+
+		sym_diff_set = set1 ^ set2  # {1, 2, 4, 5}
+
+
+8. Some Other Operations:-
+	
+	set1 = {11, 22, 33, 44}
+	set2 = {99, 33, 10, 200}
+
+	isdisjoint:-
+		Return True if two sets have a null intersection.
+
+		* set1.isdisjoint(set2)   # False
+
+	difference_update:-
+		Remove all elements of another set from this set.
+		* set1.difference_update(set2)  # Removes all common elements from set1 which are 		  				  present in set2.
+
+
+	intersection_update:-
+		Update a set with the intersection of itself and another.
+		*set1.intersection_update(set2) # from set1 removes all elements which are not 							  present in set2.
+
+	
+	issbuset:-
+		set3 = {1, 2, 3, 4}
+		set4 = {2, 3}
+		Report whether another set contains this set.
+		*set4.issubset(set3)   # if all the values of set4 are present in set3 it will 						 return True else false.
+
+
+	issuperset:-
+		set5 = {1, 2, 3, 4, 5}
+		set6 = {2, 3}
+		Report whether this set contains another set.
+		*set3.issuperset(set4)  # if set4 all elements are present in set5 it will return 					  True else false.
+
+
+	symmetric_difference:-
+		set1 = {100, 200, 300, 33, 44, 55}
+		set2 = {100, 200, 300, 33, 1000, 2000}
+		Return the symmetric difference of two sets as a new set.
+		*set3 = set1.symmetric_difference(set2) #It will create a new set called set3 								 which will have all non-common elements 							 from both the sets [set1 and set2]
+
+
+	symmetric_difference_update:-
+		set1 = {100, 200, 300, 33, 44, 55}
+		set2 = {100, 200, 300, 33, 1000, 2000}
+		Update a set with the symmetric difference of itself and another.
+		set1.symmetric_difference_update(set2)
+		print(set1)  # set1 will be updated with all non-common elements from set1 and 				       set2  
+
+

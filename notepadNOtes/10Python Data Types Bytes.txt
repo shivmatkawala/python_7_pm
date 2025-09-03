@@ -1,0 +1,152 @@
+************************************Python Data Types: Bytes***********************************************
+The bytes datatype in Python is an immutable sequence of integers in the range 0–255, used to represent binary data. It is commonly used for handling raw data such as files, images, and network communication where binary formats are required.
+
+First way to create bytes data with the help of literals.
+b prefix is used to create a bytes object and that the content within must be ASCII-compatible characters.
+
+Key Features of bytes:-
+	Immutable:
+		Once created, the content of a bytes object cannot be changed.
+
+	Sequence of Integers:
+		Each element in a bytes object represents an integer between 0 and 255.
+
+	Efficient Representation:
+		Optimized for memory usage and performance when dealing with binary data.
+
+	Encodes Binary Data:
+		Can represent encoded text using specific encodings (e.g., UTF-8, ASCII) or arbitrary binary formats.
+
+
+Creating a bytes Object:-
+	1)Using bytes function:
+		1) From a List of Integers:
+			Second way to create byte data with the help of bytes function.
+			The bytes() function expects an iterable[any collection data type] of integers (range 0–255). If integers exceed this range, it will raise a 				ValueError.
+			b = bytes([65, 66, 67, 68])
+			print(b)
+
+		2) From a String (with encoding):
+			Third way to create byte data with the help of encode ('utf-8')
+			.encode('utf-8') is a common method for converting strings to bytes when working with text data.
+			s = "Hello"
+			b = bytes(s, 'utf-8')
+			print(b)
+
+		3) From an Iterable (collections):
+			b = bytes(range(5))
+			print(b)
+		
+		4) With a Size:
+			Creates a bytes object of the specified size, initialized with zeros:
+			b = bytes(5)
+			print(b)
+
+	2) Using Literals:
+		b = b'Hello'
+		print(b)
+
+
+3) byte data types does support indexing
+4) when accessing elements of a bytes object, the returned values are integers (ASCII values), not characters.
+
+	print(b1[0])
+	print(b1[1])
+	print(b1[2])
+	print(b1[3])
+	print(b1[4])
+
+4) byte datatype does support slicing
+	print(b1[1:3])
+
+5) b1[0] = 65   TypeError: 'bytes' object does not support item assignment
+
+6) Some in built methods of bytes data type.
+7) The decode('utf-8') method decodes a bytes object into a string.
+
+	print(b1.decode('utf-8'))
+	print(b1.count(b'l'))
+	print(b1.find(b'e'))
+
+
+
+####################################################Python Data type- Bytearray#####################################################
+
+1) The bytearray datatype in Python is a mutable sequence of bytes. 
+2) it is similar to the bytes type but allows modification of its content. 
+3) This makes it useful in scenarios where you need a bytes-like object that can be altered after creation.
+
+
+Key Features of bytearray:
+
+	Mutable:
+		Unlike bytes, which is immutable, bytearray allows modifying elements and supports item assignment.
+
+	Sequence of Integers:
+		Each element in a bytearray is an integer in the range 0–255.
+
+	Dynamic Resizing:
+		You can append, insert, and delete elements from a bytearray.
+
+	Encodes Binary Data:
+		Ideal for handling binary data in applications such as I/O operations or low-level programming tasks.
+
+
+Creating a bytearray :-
+	
+	1) From a list of integers:
+		ba = bytearray([65, 66, 67, 68])
+		print(ba) 
+
+	
+	2) From an existing bytes object:
+		b = b'Hello'
+		ba = bytearray(b)
+		print(ba) 
+
+	3) From a string (encoded):
+		s = "Hello"
+		ba = bytearray(s, 'utf-8') 
+		print(ba)
+
+	4) With a specified size (initialized with zeros):
+		You can create a bytearray of a specific size by passing an integer to the bytearray constructor. This integer will define the size of the bytearray, and 		all the elements will be initialized to zero.
+
+		ba = bytearray(5)
+		print(ba)  
+
+
+Accessing and Modifying a bytearray:-
+
+	Indexing:-
+		we can access individual elements of bytearray like a list
+
+		ba = bytearray(b'Hello')
+		print(ba[0])
+
+
+	Slicing:-
+		we can retrieve a sub-sequence of the bytearray
+		
+		print(ba[1:4])
+
+
+	Item Assignment:-
+		Modify elements by assigning new values (must be integers in the range 0–255):
+
+		ba[0] = 65 
+		print(ba)
+
+
+	Appending and Extending:-
+		Add elements dynamically:
+		ba.append(33) 
+		print(ba)
+
+
+		ba.extend([32, 87, 111, 114, 108, 100])
+		print(ba) 
+
+	Deleting Elements:-
+		del ba[0]  
+		print(ba)

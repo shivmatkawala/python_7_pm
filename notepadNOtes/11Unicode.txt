@@ -1,0 +1,85 @@
+****************************************************Unicode*****************************************************
+
+For every language there are different codes and those codes combined are called as unicode.
+
+• It can be termed as unique code or universal code.
+
+• For representing UTF(Unicode Transformation Format) is followed called as UTF-8 or UTF-16
+
+and UTF-32. This type of formats are followed.
+
+• UTF-8 means allows 1 byte also 2,4
+• UTF-32-4 bytes
+• Where to nd unicode
+• Unicode.org—>code—>select any.
+
+How to use Unicode
+
+s='\u03b1'
+print(s)
+'α'
+
+s='\u03b1\u0B32\u03B3'
+print(s)
+‘αβγ’
+
+Every code represents unique alphabet. Each of these is called code byte.
+ For any language we can visit 'unicode.org' website and choose codes
+
+s='\u0915\u0916\u0917'
+print(s)
+'कखग'
+
+s='u0041'
+print(s)
+'u0041'
+
+s='\u0041'
+print(s)
+'A'
+
+s='\x41'
+print(s)
+'A'
+
+
+***************************************************************************************************************
+
+
+why unicodes ?
+
+	 The unicodes are used as exactly same as ascii codes.
+	 but ascii codes range is small [0-256]
+	 ascii codes only represent english charecters
+	 so, to represent all international languages charecters we needed a very wide range codes range, so  	 	developers developed unicode concept.
+	
+	ascii codes are decinmal numbers, but unicodes are hexadecimal numbers.
+	
+	As i told all engliush charecters are having ascii codes in ascii system, the same way english and other all languages also have unicodes too.
+
+
+what is hexadecimal number system and why we need i?
+	The hexadecimal number system (also called base-16) is a positional numeral system that uses 16 unique 	symbols to represent values:
+	
+	digits are same as 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+	letters are A, B, C, D, E, F which represent decimal values 10, 11, 12, 13, 14, 15
+
+	Each position in a hexadecimal number represents a power of 16 starting with 16 ** 0at the rightmost 	position.
+	
+	example:
+		Hexadecimal 1A3:  [1 * (16 ** 2)] +[ A * (16 ** 1)] + [3 * (16 ** 0)] = 256 + 160 + 3 = 419 (419 		is decimal representation)
+
+	python functions to convert hexadecimal number to decimal number:
+			x = int('1A3', 16)
+			print(x)
+
+	puthon function to convert decimal number to hexadecimal number:
+			y = hex(419)
+			print(y)
+
+	The hexadecimal system simplifies working with binary data in computing. It is compact, easy to convert 	to/from binary, and widely adopted in various technological fields like programming, networking, and web 	development.
+
+
+what is the range of unicode ?
+
+	The range of Unicode code points is from U+0000 to U+10FFFF, covering a total of 1,114,112 code points.

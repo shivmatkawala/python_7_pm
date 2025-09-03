@@ -1,0 +1,53 @@
+variable is very important to store the data.
+
+myName = 'Shiv'
+
+myFriendName = 'kumar'
+
+myAge = 30
+
+
+Variable :
+
+	Variable Assignment:
+		A variable is created when you assign a value to it using = (equals to sign)
+		Ex:
+			x = 15
+
+	Dynamic Typing:
+		
+		Other Languages like JAVA, C#:
+			Static Typing
+				x: number = 10
+
+		In Python:
+			Dynamic Typing
+				x = 10
+
+	Variable Naming Rules:
+		1) Variable name should start with letters or _ but can not start with number.
+		2)Variable names can not contain special character.(@, #, $, %, &*!)
+
+
+	Variable names are case sensitive:
+		Ex. ram is not equal to Ram
+
+
+	Type Checking
+
+	
+	Multiple Assignments:
+		Python allows assigning multiple variables in single line.
+
+
+	Swapping Variables:
+		Python offers very simple way to swap the values, without assigning a temporary variable.
+
+		a = 5
+		b = 10
+
+
+	Global Variable and Local Variable.
+		A global variable is defined outside of any function. It is accessible from anywhere in program.
+
+		A Local Variable is defined inside of a function. It  is accessible only inside of a function.

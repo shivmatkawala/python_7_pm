@@ -1,0 +1,70 @@
+******************************************************Tuple Data Type in Python*************************************************************************
+
+
+In Python, a tuple is an immutable data structure used to store an ordered sequence of elements. 
+
+Once created, the elements within a tuple cannot be modified, added, or removed. 
+
+This immutability makes tuples useful for representing fixed collections of items.
+
+
+KEY CHARECTERISTICS OF TUPLE:-
+
+	Immutable: Tuples cannot be modified after creation.
+
+	Ordered: Elements have a fixed order.
+
+	Heterogeneous: Elements can be of different data types.
+
+	Indexed: Each element in a tuple is associated with an index starting from 0.
+
+
+CREATING TUPLE:-
+
+	Tuples are created using parentheses () or the tuple() function.
+
+	Example: tuple1 = (1, 2, 'Rajesh', 'Sunaina')
+
+		 tuple2 = tuple([67, True, 'King'])  ----> Accepts an iterable as an argument
+
+		 tuple3 = (5,)
+
+
+ACCESSING TUPLE:-
+	Elements in a tuple are accessed by their index, similar to lists.
+
+	print(tuple1[1])
+
+
+
+IN BUILT METHODS:-
+	Since tuples are immutable, they have fewer methods compared to lists.
+
+	tuple1.count(1) ----> Returns the count of 2 in tupple.
+
+	tuple1.index(3) ----> Returns the index of the first occurrence of the specified item. 
+				Optionally, you can provide start and end indices to limit the search range.
+
+
+ADDITIONAL METHODS OF TUPLE:-
+
+	Concatenation:-
+
+		tuple1 = (1, 2)
+		tuple2 = (3, 4)
+		result = tuple1 + tuple2 
+
+
+	Repetition:-
+		tuple1 = (1, 2) * 3 
+
+
+	Unpacking:-
+		
+		tuple1 = (1, "apple", 3.5)
+
+		a, b, c = tuple1
+
+
+	Slicing:-
+
