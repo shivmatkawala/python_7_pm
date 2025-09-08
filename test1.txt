@@ -1,0 +1,20 @@
+str1 = "AMANDA HAS GONE"
+
+Q1:
+Use str1 and create another string --> "Go home"
+
+Q2:
+Use str1 and create a list of chrecters available 
+in it which is having no duplicate.
+['A',  'M', 'N', 'D', 'H', 'S', 'G', 'O', 'E']
+
+------------------------------------------------------
+list1 = [123, 56, 34, 89, -5, -234]
+
+Q1:
+find the sum of all numbers in list.
+
+Q2:
+find the minimum of all from list1.
+
+
