@@ -109,6 +109,66 @@ dict7 = dict(zip(husbands, wives))
 
 # all items
 
-print(dict7.items())
-print(type(dict7.items()))  #<class 'dict_items'>
+# print(dict7.items())
+# print(type(dict7.items()))  #<class 'dict_items'>
 
+
+# Accessing Elements using get()
+
+dict1 = {
+    'pari':'Actress',
+    'lion': 'Animal',
+    'babool': 'Tree',
+    'Banyan': 'Tree',
+    'Antalia': 'House',
+    'Jannat': 'Heaven',
+    'Lands End': 'place',
+    'Guido Van Rossum': 'Python'
+}
+
+
+# print(dict1['Lands End'])
+# print(dict1['Guido Van Rossum'])
+
+# print("----------------------------")
+
+# print(dict1.get('Lands End'))
+# print(dict1.get('Antalia'))
+
+
+# MOdifying Dictionaries
+
+# add new record
+
+# dict1['Polio'] = 'Disease'
+# print(dict1)
+
+# dict1['pari'] = 'Angel'
+# print(dict1)
+# dict1['Jamun'] = {'J': 'Jungle', 'a': 'Antque', 'm': 'Mixed', 'u': 'unite'}
+
+#Remove Elements
+
+# dict1.pop('pari')
+
+# print(dict1.pop('Antalia'))
+
+# print(dict1)
+
+
+# del dict1['Banyan']
+# print(dict1)
+
+
+# dict1.clear()
+# print(dict1)
+
+# dict1.popitem()
+# print(dict1)
+
+
+dict1.update({'alia': 'Ranbir', 'Sumona': 'Rajesh', 'Kiara': 'Sidharth'})
+
+dict1.setdefault('shivkumar')
+
+print(dict1)
